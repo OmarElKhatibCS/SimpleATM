@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
+   <children>
+      <TextField fx:id="username" layoutX="170.0" layoutY="118.0" prefHeight="42.0" prefWidth="260.0" promptText="Username" style="-fx-border-color: #00BCD4;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" layoutX="170.0" layoutY="179.0" prefHeight="42.0" prefWidth="260.0" promptText="Password" style="-fx-border-color: #00BCD4;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="login" layoutX="252.0" layoutY="270.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="42.0" prefWidth="96.0" style="-fx-background-color: #00BCD4;" text="LOGIN" textFill="WHITE" />
+      <ImageView fitHeight="42.0" fitWidth="40.0" layoutX="126.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="126.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/password.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="titleLabel" layoutX="102.0" layoutY="43.0" text="Account Manager (Bank)" textAlignment="CENTER" textFill="#03a9f4">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

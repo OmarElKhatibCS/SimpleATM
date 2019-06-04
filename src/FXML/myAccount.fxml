@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="myAccount" prefHeight="409.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.myAccountController">
+   <children>
+      <ImageView fitHeight="60.0" fitWidth="61.0" layoutX="39.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/user.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="balanceLabel" layoutX="118.0" layoutY="198.0" text="Balance : 0$" textAlignment="CENTER">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="fullName" layoutX="102.0" layoutY="42.0" text="Omar ElKhatib">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="address" layoutX="347.0" layoutY="74.0" text="Barja" />
+      <Label fx:id="phoneNumber" layoutX="303.0" layoutY="47.0" text="+96176755987" />
+      <Label fx:id="bankID" layoutX="107.0" layoutY="81.0" text="(bankID)" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="409.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.withdrawController">
+   <children>
+      <ImageView fitHeight="70.0" fitWidth="80.0" layoutX="189.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/withdraw.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="amountField" layoutX="138.0" layoutY="150.0" prefHeight="50.0" prefWidth="173.0" promptText="Amount" style="-fx-background-color: 0; -fx-border-color: #03A9F4;" />
+      <Button fx:id="withdrawBTN" layoutX="185.0" layoutY="258.0" mnemonicParsing="false" onAction="#withdrawAction" prefHeight="34.0" prefWidth="80.0" style="-fx-background-color: 0; -fx-border-color: #03A9F4; -fx-border-radius: 30 30 30 30;" text="withdraw" />
+      <Label layoutX="322.0" layoutY="158.0" text="\$">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

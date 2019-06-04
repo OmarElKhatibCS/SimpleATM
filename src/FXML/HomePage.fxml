@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomePageController">
+   <children>
+      <Pane prefHeight="406.0" prefWidth="154.0" style="-fx-background-color: #03A9F4;">
+         <children>
+            <ImageView fitHeight="57.0" fitWidth="49.0" layoutX="53.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/bank.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="welcomeLabel" layoutX="21.0" layoutY="90.0" text="welcome test" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutY="127.0" prefHeight="279.0" prefWidth="154.0">
+               <children>
+                  <Button fx:id="myAccountBTN" layoutX="7.0" layoutY="30.0" mnemonicParsing="false" onAction="#loadMyAccount" prefHeight="43.0" prefWidth="139.0" style="-fx-background-color: 0; -fx-border-color: #B3E5FC;" text="MyAccount" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="withdrawBTN" layoutX="8.0" layoutY="82.0" mnemonicParsing="false" onAction="#loadWithdraw" prefHeight="43.0" prefWidth="139.0" style="-fx-background-color: 0; -fx-border-color: #B3E5FC;" text="Withdraw" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="sendBTN" layoutX="8.0" layoutY="133.0" mnemonicParsing="false" onAction="#loadSend" prefHeight="43.0" prefWidth="139.0" style="-fx-background-color: 0; -fx-border-color: #B3E5FC;" text="Send" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="historyBTN" layoutX="8.0" layoutY="183.0" mnemonicParsing="false" onAction="#loadHistory" prefHeight="43.0" prefWidth="139.0" style="-fx-background-color: 0; -fx-border-color: #B3E5FC;" text="History" textAlignment="CENTER" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="holderPane" layoutX="154.0" layoutY="-6.0" prefHeight="409.0" prefWidth="447.0" />
+   </children>
+</AnchorPane>
